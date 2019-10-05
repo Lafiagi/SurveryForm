@@ -8,24 +8,36 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Survery Form</h1>
+    <p id="description">
+    This survery form is very cool. Fill it.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Full Name</label>
+      <input id="name" placeholder="Enter your name" type="text">
+      <label id="email-label" for="email">Email Address</label>
+      <input id="email" placeholder="Enter your email" type="email">
+      <label id="number-label" for="number">Age</label>
+      <input id="number" placeholder="Enter your number" type="number" min=0 max=100>
+      Education<select id="dropdown">
+        <option>College</option>
+        <option>Diploma</option>
+        <option>Higher Diploma</option>
+        <option> Bsc</option>
+      </select>
+      Gender:
+      Male <input type="radio" name="gender" value="male">
+      Female <input type="radio" name="gender" value="female">
 
+      Languages:
+      English <input type="checkbox" value="english">
+      Arabic <input type="checkbox" value="arabic">
+      Hausa <input type="checkbox" value="hausa">
+      User comments:
+      <textarea></textarea>
 
-
-    <h1>
-      Hello World!
-    </h1>
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+      <input type="submit" id="submit" value="Register">
+    </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
